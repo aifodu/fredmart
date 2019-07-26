@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Segoe UI", sans-serif, sans-serif;
+}
+
+header {
+  color: white;
+  padding: 3em 4em;
+  background-color: #0f78a8;
+}
+
+header h1 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.searchbox {
+  width: calc(100% - 20px);
+  margin: 10px;
+  padding: 15px 10px;
+  font-size: 1.3em;
+  display: block;
+  font-family: "Segoe UI", sans-serif, sans-serif;
+}
+
+.product {
+  float: left;
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid gray 1px;
+  box-shadow: 5px 5px 5px #dadce0;
+}
+
+.product span {
+  padding: 3px 9px 10px;
+  font-size: 0.7em;
+  color: #fefefe;
+  text-transform: uppercase;
+  background-color: #dc143c;
+}
+
+.product img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.product .name {
+  font-size: 1.15em;
+  margin-bottom: 0.3em;
+}
+
+.product .description {
+  font-size: 0.85em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product h2 {
+  margin: 0.5em 0 0.75em;
+}
+
+.product button {
+  width: 100%;
+  display: block;
+  padding: 12px 5px;
+  /* font-weight: 900; */
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 1.25em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #188ec5;
+  font-family: "Segoe UI", sans-serif, sans-serif;
+}

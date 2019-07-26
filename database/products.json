@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Blue Diaper",
+    "price": "4,000.00",
+    "category": "diapers",
+    "description": "Pampers diapers offer the best protection against rashes and keep your baby dry and comfortable all night long.",
+    "image": "https://images.ctfassets.net/50gzycvace50/d5b93799f7e5838ca03ad799da5c53c8f2f777c4768b7f39148a0e2f4f23f7f6/d04726691f67c895d6e8c0efd91666eb/d5b93799f7e5838ca03ad799da5c53c8f2f777c4768b7f39148a0e2f4f23f7f6.png?fl=progressive&fm=jpg&bg=rgb:f9f9f9&w=620&h=620"
+  },
+  {
+    "id": 2,
+    "name": "Another Diaper",
+    "price": "5,000.00",
+    "category": "diapers",
+    "description": "This one also does the same thing",
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/438x531/2066568a.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Adult Diaper",
+    "price": "7,000.00",
+    "category": "diapers",
+    "description": "Adults too need diapers too sometimes",
+    "image": "https://www.dischem.co.za/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/6/0/6009539522667_1.jpg"
+  }
+]
