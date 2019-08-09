@@ -22,5 +22,53 @@
     "category": "diapers",
     "description": "Adults too need diapers too sometimes",
     "image": "https://www.dischem.co.za/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/6/0/6009539522667_1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "People are poison",
+    "price": "3,000.00",
+    "category": "clothing",
+    "description": "White shirt that describes some people",
+    "image": "http://cdn.shopify.com/s/files/1/2140/5177/products/product-image-798264865_1200x1200.jpg?v=1536955517"
+  },
+  {
+    "id": 5,
+    "name": "Short sleeved baseball",
+    "price": "4,000.00",
+    "category": "clothing",
+    "description": "Black baseball shirt that you can wear to the games",
+    "image": "https://cdn.shopify.com/s/files/1/0398/0037/products/WT2736-BLACK-1_1024x1024.jpg?v=1485220995"
+  },
+  {
+    "id": 6,
+    "name": "Breakfast Cereal",
+    "price": "1,600.00",
+    "category": "food",
+    "description": "Healthy and nutritious breakfast for your whole family",
+    "image": "https://www.chemservice.com/news/wp-content/uploads/2018/11/The-EWG-is-warning-parents-about-the-potentially-dangerous-chemicals-found-in-many-breakfast-cereals-_1646_40180099_0_14097863_500.jpg"
+  },
+  {
+    "id": 7,
+    "name": "iPhone 10x",
+    "price": "213,990.00",
+    "category": "phone",
+    "description": "The power of the most powerful iPhone yet in your hands",
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-xr-yellow-select-201809?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1551226036826"
+  },
+  {
+    "id": 8,
+    "name": "Beef Steak",
+    "price": "1,990.00",
+    "category": "food",
+    "description": "A healthy, yet delicious protein source for your wellbeing",
+    "image": "https://d5q6n6g7.stackpathcdn.com//content/images/thumbs/0001404.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Samsung Galaxys10+",
+    "price": "199,990.00",
+    "category": "phone",
+    "description": "The mobile phone for today's power user",
+    "image": "https://image-us.samsung.com/SamsungUS/mobile/phones/06102019-new/First_S10_Lockup1_Blue_gallery.jpg"
   }
 ]

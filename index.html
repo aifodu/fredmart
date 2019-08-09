@@ -6,14 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Fredmart</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="./vendor/fontawesome-free-5.9.0-web/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <h1>Fredmart</h1>
+      <h1><span class="fa fa-shopping-basket"></span> Fredmart</h1>
+      <button id="cart-trigger" class="btn btn-cart">
+        Cart, <span class="cart-items">0</span>
+      </button>
     </header>
     <section>
       <input placeholder="Search for product" class="searchbox" type="text" />
     </section>
+    <!-- <section> -->
     <section id="product-list">
       <!-- <article class="product">
         <span>Category</span>
@@ -23,10 +31,20 @@
         />
         <p class="name">Name</p>
         <p class="description">Description</p>
-        <h2>Price</h2>
+        <h3>Price</h3>
         <button>Add to Cart</button>
-      </article> -->
+      </!-->
+      -->
+    </section>
+    <section class="cart">
+      <h1>
+        <span class="close fa fa-arrow-left"></span>
+        <span class="total">N67,000.00</span>
+      </h1>
+      <hr />
+      <div id="cart-content"></div>
     </section>
     <script src="./scripts/data.js"></script>
+    <script src="./scripts/cart.js"></script>
   </body>
 </html>

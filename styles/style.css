@@ -11,13 +11,31 @@ body {
 
 header {
   color: white;
-  padding: 3em 4em;
+  padding: 2em 4em;
   background-color: #0f78a8;
+
+  display: flex;
+  flex-direction: row;
 }
 
 header h1 {
   letter-spacing: 4px;
   text-transform: uppercase;
+}
+
+header button {
+  margin-left: auto;
+  padding: 0 20px;
+  background: transparent;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .searchbox {
@@ -31,12 +49,12 @@ header h1 {
 
 .product {
   float: left;
-  width: 250px;
+  width: 200px;
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
-  border: solid gray 1px;
-  box-shadow: 5px 5px 5px #dadce0;
+  border: solid #dddddd 1px;
+  box-shadow: 2px 2px 2px #dadce0;
 }
 
 .product span {
@@ -48,13 +66,13 @@ header h1 {
 }
 
 .product img {
-  width: 230px;
-  height: 230px;
+  width: 170px;
+  height: 170px;
   object-fit: cover;
 }
 
 .product .name {
-  font-size: 1.15em;
+  /* font-size: 1.15em; */
   margin-bottom: 0.3em;
 }
 
@@ -64,22 +82,96 @@ header h1 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.product h2 {
-  margin: 0.5em 0 0.75em;
+.product h3 {
+  margin: 0.5em 0 0.5em;
 }
 
 .product button {
   width: 100%;
   display: block;
   padding: 12px 5px;
-  /* font-weight: 900; */
+  font-weight: 500;
   cursor: pointer;
   border: none;
   outline: none;
-  font-size: 1.25em;
+  /* font-size: 1.25em; */
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #188ec5;
   font-family: "Segoe UI", sans-serif, sans-serif;
+}
+
+/* CART STYLING */
+
+.cart {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: none;
+  padding: 2em 4em;
+  transition: transform 0.2s ease-out;
+  transform: translateX(100%);
+  overflow-y: auto;
+}
+
+.cart.open {
+  display: block;
+}
+
+.cart.animate {
+  transform: translateX(0);
+}
+
+.cart h1 {
+  margin-bottom: 1em;
+}
+
+.cart hr {
+  color: #dddeee;
+}
+
+.close {
+  color: #dc143c;
+  margin: 0.5em 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.close:hover {
+  transition: all 0.2s;
+  transform: translateX(-15px);
+}
+
+.total {
+  font-weight: 200;
+  font-size: 1.4em;
+  margin-top: 0.4em;
+  display: inline-block;
+}
+
+.cart article {
+  display: flex;
+  flex-direction: row;
+  margin: 2em 0;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #bebebe;
+}
+
+.cart article img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.cart article div {
+  margin-left: 15px;
+  display: grid;
+  align-items: center;
+}
+.cart article div p {
+  font-size: 0.8em;
 }

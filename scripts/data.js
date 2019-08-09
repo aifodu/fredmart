@@ -5,6 +5,7 @@ fetch("../database/products.json")
     return response.json();
   })
   .then(function(products) {
+    localStorage.setItem("fredmartProducts", JSON.stringify(products));
     generateProductCards(products);
   });
 
@@ -20,13 +21,14 @@ function generateProductCards(products) {
             />
             <p class="name">${product.name}</p>
             <p class="description">${product.description}</p>
-            <h2>N${product.price}</h2>
-            <button data-id="${product.id}">Add to Cart</button>
+            <h3>N${product.price}</h3>
+            <button class="add-to-cart" data-id="${
+              product.id
+            }">Add to Cart</button>
         </article>
     `;
     newProductList += newProduct;
   });
-  console.log(newProductList);
   productList.innerHTML = newProductList;
 }
 
