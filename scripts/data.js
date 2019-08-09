@@ -21,7 +21,7 @@ function generateProductCards(products) {
             />
             <p class="name">${product.name}</p>
             <p class="description">${product.description}</p>
-            <h3>N${product.price}</h3>
+            <h3>N${product.price.toLocaleString()}</h3>
             <button class="add-to-cart" data-id="${
               product.id
             }">Add to Cart</button>

@@ -1,21 +1,23 @@
 const openCartButton = document.getElementById("cart-trigger");
 const closeCartButton = document.querySelector(".close");
 const cart = document.querySelector(".cart");
+const total = document.querySelector(".total");
 const products = document.querySelector(".cart-items");
 const cartContent = document.getElementById("cart-content");
 
+let cartTotal = 0;
 let customerCart = [];
 let cartProducts = [];
 
 function findProductById(id) {
   const products = JSON.parse(localStorage.getItem("fredmartProducts"));
-  return [...products].find(product => {
-    return product.id == id;
-  });
+  return [...products].find(product => product.id == id);
 }
 
 function openCart(e) {
+  cartTotal = 0;
   cartProducts = [];
+
   customerCart.forEach(id => {
     cartProducts.push(findProductById(id));
   });
@@ -24,6 +26,7 @@ function openCart(e) {
   cartContent.innerHTML = "";
 
   cartProducts.forEach(product => {
+    cartTotal += parseInt(product.price);
     const item = `
     <article>
         <img
@@ -31,7 +34,7 @@ function openCart(e) {
         />
         <div>
           <h4>${product.name}</h4>
-          <p>Price: ${product.price}</p>
+          <p>Price: ${product.price.toLocaleString()}</p>
           <p>Subtotal: Do this at home</p>
         </div>
       </article>
@@ -40,6 +43,7 @@ function openCart(e) {
   });
 
   cartContent.innerHTML = newCartList;
+  total.innerText = cartTotal.toLocaleString();
 
   if (cartProducts.length > 0) {
     cart.classList.add("open");

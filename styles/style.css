@@ -9,6 +9,10 @@ body {
   font-family: "Segoe UI", sans-serif, sans-serif;
 }
 
+body {
+  padding-bottom: 3em;
+}
+
 header {
   color: white;
   padding: 2em 4em;
@@ -109,7 +113,7 @@ header button {
   position: fixed;
   top: 0;
   right: 0;
-  width: 50vw;
+  width: 40vw;
   background-color: rgba(255, 255, 255, 0.95);
   display: none;
   padding: 2em 4em;
@@ -146,7 +150,7 @@ header button {
   transform: translateX(-15px);
 }
 
-.total {
+.cart-total {
   font-weight: 200;
   font-size: 1.4em;
   margin-top: 0.4em;
@@ -172,6 +176,19 @@ header button {
   display: grid;
   align-items: center;
 }
+
 .cart article div p {
   font-size: 0.8em;
+}
+
+.button-checkout {
+  outline: none;
+  color: #626872;
+  padding: 1em 3em;
+  border: 2px solid #db1230;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  cursor: pointer;
 }
